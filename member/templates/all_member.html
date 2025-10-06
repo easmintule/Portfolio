@@ -4,8 +4,7 @@
         <h1>Members</h1>
         <ul>
             {% for x in mymembers %}
-            <li>{{x.first_name}} {{x.last_name}}</li>
-            <li>{{x.email}}</li>
+            <li> <b>Name</b> = {{x.first_name}} {{x.last_name}}, <b>email</b> = {{x.email}}</li>
 
             {% endfor %}
 

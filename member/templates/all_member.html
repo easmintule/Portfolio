@@ -1,6 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <body>
+{% extends "master.html" %}
+{% block title %}
+    My Portfolio
+    {% endblock %}
+
+    {% block content %}
+
         <h1>Members</h1>
         <ul>
             {% for x in mymembers %}
@@ -9,7 +13,5 @@
             {% endfor %}
 
         </ul>
-    </body>
-
-
-</html>
+    
+    {% endblock %}

@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html>
+{% extends "master.html" %}
 
-<body>
+{% block title %}
+details about {{mymember.first_name}} {{mymember.last_name}}
+{% endblock %}
 
+
+{% block content %}
 <h1>{{ mymember.first_name }} {{ mymember.last_name }}</h1>
   
 <p>Email: {{ mymember.email }}</p>
 
 <p>Back to <a href="/ab/members">Members</a></p>
 
-</body>
-</html
+{% endblock %}
